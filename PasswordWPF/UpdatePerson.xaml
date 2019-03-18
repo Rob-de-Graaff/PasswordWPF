@@ -1,0 +1,67 @@
+﻿<Window x:Name="updateWindow" x:Class="PasswordWPF.UpdatePerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordWPF"
+        mc:Ignorable="d"
+        Title="UpdatePerson" Height="365" Width="555" MinHeight="365" MinWidth="555" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="labelID" Content="ID :" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxID" HorizontalAlignment="Left" Height="23" Margin="102,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True" />
+
+        <Label x:Name="labelFirstname" Content="Voornaam :" HorizontalAlignment="Left" Margin="27,41,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxFirstname" HorizontalAlignment="Left" Height="23" Margin="102,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="labelLastname" Content="Achternaam :" HorizontalAlignment="Left" Margin="17,72,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxLastname" HorizontalAlignment="Left" Height="23" Margin="102,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="labelDay" Content="Dag :" HorizontalAlignment="Left" Margin="60,98,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="comboboxDay" HorizontalAlignment="Left" Margin="102,102,0,0" VerticalAlignment="Top" Width="45" MinWidth="45" IsReadOnly="True" SelectedIndex="0" />
+
+        <Label x:Name="labelMonth" Content="Maand :" HorizontalAlignment="Left" Margin="152,98,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="comboboxMonth" HorizontalAlignment="Left" Margin="210,102,0,0" VerticalAlignment="Top" Width="45" MinWidth="45" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+            <ComboBoxItem>6</ComboBoxItem>
+            <ComboBoxItem>7</ComboBoxItem>
+            <ComboBoxItem>8</ComboBoxItem>
+            <ComboBoxItem>9</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+        </ComboBox>
+
+        <Label x:Name="labelYear" Content="Jaar :" HorizontalAlignment="Left" Margin="260,98,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="comboboxYear" HorizontalAlignment="Left" Margin="302,102,0,0" VerticalAlignment="Top" Width="54" MinWidth="54" IsReadOnly="True" SelectedIndex="0" />
+
+        <Label x:Name="labelRole" Content="Rol :" HorizontalAlignment="Left" Margin="64,129,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="comboboxRole" HorizontalAlignment="Left" Margin="102,131,0,0" VerticalAlignment="Top" Width="103" MinWidth="103" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem>Management</ComboBoxItem>
+            <ComboBoxItem>Secretariat</ComboBoxItem>
+            <ComboBoxItem>Cleaning</ComboBoxItem>
+            <ComboBoxItem>Cafetaria</ComboBoxItem>
+        </ComboBox>
+
+        <Label x:Name="labelHoursWorked" Content="Uren gewerkt :" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxHoursWorked" HorizontalAlignment="Left" Height="23" Margin="102,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="labelSalary" Content="Salaris :" HorizontalAlignment="Left" Margin="47,191,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxSalary" HorizontalAlignment="Left" Height="23" Margin="102,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="labelCode" Content="Code :" HorizontalAlignment="Left" Margin="53,222,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxCode" HorizontalAlignment="Left" Height="23" Margin="102,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="labelLocked" Content="Geblokkeerd :" HorizontalAlignment="Left" Margin="14,253,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="comboboxLocked" HorizontalAlignment="Left" Margin="102,253,0,0" VerticalAlignment="Top" Width="60" MinWidth="60" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem>false</ComboBoxItem>
+            <ComboBoxItem>true</ComboBoxItem>
+        </ComboBox>
+
+        <Button x:Name="managementWindowButton" Content="Management Venster" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="125" Click="ManagementWindowButton_Click" MinWidth="125" />
+        <Button x:Name="buttonUpdatePerson" Content="Wijzig" HorizontalAlignment="Left" Margin="273,0,0,10" VerticalAlignment="Bottom" Width="75" Click="ButtonUpdatePerson_Click" MinWidth="78" />
+    </Grid>
+</Window>

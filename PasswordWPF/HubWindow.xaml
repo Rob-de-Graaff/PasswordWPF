@@ -1,0 +1,24 @@
+﻿<Window x:Class="PasswordWPF.HubWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordWPF"
+        mc:Ignorable="d"
+        Title="HubWindow" Height="225" Width="245" MinWidth="245" MinHeight="225" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*" />
+            <ColumnDefinition Width="221*" />
+        </Grid.ColumnDefinitions>
+        <Label Content="Management :" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <Label Content="Secretariat :" HorizontalAlignment="Left" Margin="8,43,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <Label Content="Cleaning :" HorizontalAlignment="Left" Margin="18,74,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <Label Content="Cafetaria :" HorizontalAlignment="Left" Margin="17,105,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <Button x:Name="managementButton" Content="Management Venster" HorizontalAlignment="Left" Margin="85,15,0,0" VerticalAlignment="Top" Width="120"  IsEnabled="False" Click="ManagementButton_Click" Grid.Column="1" />
+        <Button x:Name="secretariatButton" Content="Secretariat Venster" HorizontalAlignment="Left" Margin="85,46,0,0" VerticalAlignment="Top" Width="120"  IsEnabled="False" Click="SecretariatButton_Click" Grid.Column="1" />
+        <Button x:Name="cleaningButton" Content="Cleaning Venster" HorizontalAlignment="Left" Margin="85,77,0,0" VerticalAlignment="Top" Width="120"  IsEnabled="False" Click="CleaningButton_Click" Grid.Column="1" />
+        <Button x:Name="cafetariaButton" Content="Cafetaria Venster" HorizontalAlignment="Left" Margin="85,108,0,0" VerticalAlignment="Top" Width="120"  IsEnabled="False" Click="CafetariaButton_Click" Grid.Column="1" />
+        <Button x:Name="mainWindowButton" Content="Login Venster" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="85" Click="MainWindowButton_Click" MinWidth="85" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>
